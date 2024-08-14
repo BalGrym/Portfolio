@@ -1,6 +1,8 @@
 <template>
   <the-navigation></the-navigation>
-  <bento-wrapper></bento-wrapper>
+  <main class="bento-wrapper">
+    <bento-wrapper></bento-wrapper>
+  </main>
 </template>
 
 <script>
@@ -15,4 +17,17 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+.bento-wrapper {
+  display: grid;
+  grid-template:
+    "carousel carousel presentation presentation" 300px
+    "carousel carousel p3 contact" 300px
+    "skill skill p3 passion" 300px
+    "aventure aventure vs passion" 300px
+    "aventure aventure design design" 300px
+    / auto;
+  gap: 10px;
+  margin: 30px;
+}
+</style>
