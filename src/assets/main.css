@@ -7,3 +7,7 @@ a,
   transition: 0.4s;
   padding: 3px;
 }
+
+p {
+  margin-bottom: 0;
+}

@@ -27,7 +27,7 @@ export default {
     "aventure aventure vs passion" 300px
     "aventure aventure apprentissage apprentissage" 300px
     / 1fr 1fr 1fr 1fr;
-  gap: 10px;
+  gap: 20px;
   margin: 30px;
 }
 </style>

@@ -1,78 +1,48 @@
 <template>
-  <div class="bento-item carousel">carousel</div>
-  <div
-    class="bento-item presentation d-flex flex-column justify-content-between"
-  >
-    <h1 class="name">Kévin Bernin - Développeur Web</h1>
-    <div class="separator"></div>
-    <p>
-      Diplomé chez Open Class Room en tant que Développeur Web Fullstack en
-      Javascript, je suis à la recherche d'une alternance de 15 mois pour un
-      diplôme de niveau 6 en Javascript gagner en expérience.
-    </p>
-  </div>
-  <div class="bento-item contact d-flex flex-column justify-content-between">
-    <h1>Vous pouvez me retrouver ici !</h1>
-    <div class="d-flex justify-content-around">
-      <i class="fa-brands fa-linkedin fa-2xl"></i>
-      <i class="fa-brands fa-github-square fa-2xl"></i>
-    </div>
-    <button class="email"><i class="fa-solid fa-envelope"></i> E-mail</button>
-  </div>
-  <div class="bento-item vsinput">vs</div>
-  <div class="bento-item skills">
-    <h1>Les stacks que je maitrise !</h1>
-    <div class="front">
-      <i class="fa-brands fa-html5"></i>
-      <i class="fa-brands fa-css3-alt"></i>
-      <i class="fa-brands fa-js"></i>
-      <i class="fa-brands fa-vuejs"></i>
-    </div>
-    <div class="back">
-      <i class="fa-brands fa-node"></i>
-      <p>expressjs</p>
-      <p>SQL</p>
-      <p>Sequelize</p>
-    </div>
-  </div>
-  <div class="bento-item p3">p</div>
-  <div class="bento-item passion d-flex flex-column justify-content-between">
-    <h1>Mes passions !</h1>
-    <div class="passion-informatique">
-      Passionné d'informatique depuis plus de 10 ans
-    </div>
-    <div class="passion-sport">
-      J'adore le sport et surtout l'escalade en bloc !
-    </div>
-    <div class="passion-jeux">Jeux vidéos et jeux de société !</div>
-  </div>
-  <div class="bento-item aventure">
-    <h1>Mon aventure en tant Developpeur Web !</h1>
-    <ul>
-      <li>Apprentissage des bases de Dev Web en autodidacte.</li>
-      <li>
-        Formation Open Class Room dev web bac +2
-        <!-- <li> nested ? -->
-      </li>
-      <li>PortFolio</li>
-      <li>VS Input</li>
-    </ul>
-  </div>
-  <div class="bento-item apprentissage">apprentissage</div>
+  <bento-carousel class="bento-item carousel"></bento-carousel>
+  <bento-presentation class="bento-item presentation"></bento-presentation>
+  <bento-contact class="bento-item contact"></bento-contact>
+  <bento-vsinput class="bento-item vsinput"></bento-vsinput>
+  <bento-skill class="bento-item skills"></bento-skill>
+  <bento-ohmyfood class="bento-item ohmyfood"></bento-ohmyfood>
+  <bento-passion class="bento-item passion"></bento-passion>
+  <bento-aventure class="bento-item aventure"></bento-aventure>
+  <bento-apprentissage class="bento-item apprentissage"></bento-apprentissage>
 </template>
 
 <script>
+import BentoCarousel from "./BentoCarousel.vue";
+import BentoPresentation from "./BentoPresentation.vue";
+import BentoContact from "./BentoContact.vue";
+import BentoVsinput from "./BentoVsinput.vue";
+import BentoSkill from "./BentoSkill.vue";
+import BentoPassion from "./BentoPassion.vue";
+import BentoAventure from "./BentoAventure.vue";
+import BentoApprentissage from "./BentoApprentissage.vue";
+import BentoOhmyfood from "./BentoOhmyfood.vue";
+
 export default {
-  components: {},
+  components: {
+    BentoCarousel,
+    BentoPresentation,
+    BentoContact,
+    BentoVsinput,
+    BentoSkill,
+    BentoPassion,
+    BentoAventure,
+    BentoApprentissage,
+    BentoOhmyfood,
+  },
 };
 </script>
 
 <style scoped>
 .bento-item {
-  background: #1d1d1d;
+  background: #242424;
   border-radius: 65px;
   padding: 45px;
   text-wrap: wrap;
+  filter: drop-shadow(0px 0px 20px #2583f00a);
 }
 
 .carousel {
@@ -83,29 +53,8 @@ export default {
   grid-area: presentation;
 }
 
-.separator {
-  height: 1px;
-  width: 100%;
-  background-color: #3d3d3d;
-}
-
 .contact {
   grid-area: contact;
-}
-
-.email {
-  width: 100px;
-  margin: 0 auto;
-  background: grey;
-  color: white;
-  border: none;
-  border-radius: 20px;
-  padding: 5px;
-}
-
-.contact h1,
-.passion h1 {
-  font-size: 1.2rem;
 }
 
 .vsinput {
@@ -116,7 +65,7 @@ export default {
   grid-area: skill;
 }
 
-.p3 {
+.ohmyfood {
   grid-area: p3;
 }
 
@@ -126,6 +75,33 @@ export default {
 
 .aventure {
   grid-area: aventure;
+}
+
+.background-gradient {
+  background: radial-gradient(
+      110% 146% at 86% -17%,
+      rgba(22, 14, 113, 1) 0%,
+      rgba(19, 13, 92, 0.26) 55%,
+      rgba(90, 35, 248, 0) 90%
+    ),
+    linear-gradient(44deg, rgb(13, 54, 80) 2%, rgba(106, 103, 227, 0) 87%),
+    radial-gradient(
+      102% 103% at 21% 24%,
+      rgba(121, 54, 174, 1) 0%,
+      rgba(121, 54, 174, 0) 100%
+    ),
+    radial-gradient(
+      94.51% 124.88% at 96% 94.43%,
+      rgba(65, 244, 255, 0.78) 0%,
+      rgba(131, 218, 255, 0.66) 32%,
+      rgba(99, 175, 240, 0.4) 64%,
+      rgba(43, 90, 211, 0) 100%
+    ),
+    linear-gradient(
+      313.04deg,
+      rgba(52, 29, 101, 1) 1%,
+      rgba(96, 74, 234, 1) 100%
+    );
 }
 
 .apprentissage {
