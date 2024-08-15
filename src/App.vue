@@ -25,8 +25,8 @@ export default {
     "carousel carousel p3 contact" 300px
     "skill skill p3 passion" 300px
     "aventure aventure vs passion" 300px
-    "aventure aventure design design" 300px
-    / auto;
+    "aventure aventure apprentissage apprentissage" 300px
+    / 1fr 1fr 1fr 1fr;
   gap: 10px;
   margin: 30px;
 }
