@@ -1,3 +1,3 @@
 <template>
-  <div class="bento-item apprentissage">apprentissage</div>
+  <div class="bento-item apprentissage">apprentissage / projets futur</div>
 </template>

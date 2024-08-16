@@ -1,13 +1,15 @@
 <template>
-  <bento-carousel class="bento-item carousel"></bento-carousel>
-  <bento-presentation class="bento-item presentation"></bento-presentation>
-  <bento-contact class="bento-item contact"></bento-contact>
-  <bento-vsinput class="bento-item vsinput"></bento-vsinput>
-  <bento-skill class="bento-item skills"></bento-skill>
-  <bento-ohmyfood class="bento-item ohmyfood"></bento-ohmyfood>
-  <bento-passion class="bento-item passion"></bento-passion>
-  <bento-aventure class="bento-item aventure"></bento-aventure>
-  <bento-apprentissage class="bento-item apprentissage"></bento-apprentissage>
+  <div class="bento-wrapper">
+    <bento-carousel class="bento-item carousel"></bento-carousel>
+    <bento-presentation class="bento-item presentation"></bento-presentation>
+    <bento-contact class="bento-item contact"></bento-contact>
+    <bento-vsinput class="bento-item vsinput"></bento-vsinput>
+    <bento-skill class="bento-item skills"></bento-skill>
+    <bento-ohmyfood class="bento-item ohmyfood"></bento-ohmyfood>
+    <bento-passion class="bento-item passion"></bento-passion>
+    <bento-aventure class="bento-item aventure"></bento-aventure>
+    <bento-apprentissage class="bento-item apprentissage"></bento-apprentissage>
+  </div>
 </template>
 
 <script>
@@ -37,6 +39,19 @@ export default {
 </script>
 
 <style scoped>
+.bento-wrapper {
+  display: grid;
+  grid-template:
+    "carousel carousel presentation presentation" 300px
+    "carousel carousel p3 contact" 300px
+    "skill skill p3 passion" 300px
+    "aventure aventure vs passion" 300px
+    "aventure aventure apprentissage apprentissage" 300px
+    / 1fr 1fr 1fr 1fr;
+  gap: 20px;
+  margin: 30px;
+}
+
 .bento-item {
   background: #242424;
   border-radius: 65px;

@@ -3,10 +3,10 @@
     <img src="../../assets/logo/logo.png" alt="icon" class="logo" />
     <nav>
       <ul>
-        <li><a href="#">Acceuil</a></li>
-        <li><a href="#">À propos</a></li>
-        <li><a href="#">Projets</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><router-link to="/">Acceuil</router-link></li>
+        <li><router-link to="">À propos</router-link></li>
+        <li><router-link to="">Projets</router-link></li>
+        <li><router-link to="/contact">Contact</router-link></li>
       </ul>
     </nav>
     <ul>
