@@ -2,7 +2,7 @@
   <div class="background-gradient">
     <h1>Mon aventure en tant Developpeur Web !</h1>
     <div></div>
-    <ul>
+    <ul class="list-unstyled">
       <li>Apprentissage des bases de Dev Web en autodidacte.</li>
       <li>
         <p>Formation Open Class Room dev web bac +2</p>
