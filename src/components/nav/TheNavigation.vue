@@ -4,8 +4,8 @@
     <nav>
       <ul>
         <li><router-link to="/">Acceuil</router-link></li>
-        <li><router-link to="">À propos</router-link></li>
-        <li><router-link to="">Projets</router-link></li>
+        <li><router-link to="/about">À propos</router-link></li>
+        <li><router-link to="/projets">Projets</router-link></li>
         <li><router-link to="/contact">Contact</router-link></li>
       </ul>
     </nav>
@@ -38,7 +38,6 @@ ul {
 
 .logo {
   height: 80px;
-  /* width: 80px; */
 }
 
 nav {

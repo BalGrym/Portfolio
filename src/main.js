@@ -6,10 +6,14 @@ import App from "./App.vue";
 
 import BentoWrapper from "./components/bento/BentoWrapper.vue";
 import Contact from "./components/contact/Contact.vue";
+import Projets from "./components/projets/Projets.vue";
+import About from "./components/About.vue/About.vue";
 
 const routes = [
   { path: "/", component: BentoWrapper },
   { path: "/contact", component: Contact },
+  { path: "/projets", component: Projets },
+  { path: "/about", component: About },
 ];
 
 const router = createRouter({

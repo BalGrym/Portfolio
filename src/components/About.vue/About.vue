@@ -1,0 +1,3 @@
+<template>
+  <div>à propos</div>
+</template>
