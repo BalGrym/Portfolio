@@ -16,6 +16,11 @@
         />
         <img src="../../assets/logo/nodejs.png" alt="NodeJS Logo" />
         <img src="../../assets/logo/serveur-sql.png" alt="SQL Logo" />
+        <img
+          src="../../assets/logo/mongodb.png"
+          alt="MongoDB Logo"
+          class="mongodb-logo"
+        />
       </div>
     </div>
   </div>
@@ -32,7 +37,8 @@ img {
   margin: 5px;
 }
 
-.sequelize-logo {
+.sequelize-logo,
+.mongodb-logo {
   width: 10%;
 }
 </style>

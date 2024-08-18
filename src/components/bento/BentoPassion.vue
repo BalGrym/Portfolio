@@ -1,6 +1,6 @@
 <template>
   <div class="bento-item passion d-flex flex-column justify-content-between">
-    <h1>Mes passions !</h1>
+    <h3>Mes passions !</h3>
     <div class="passion-informatique">
       <img
         src="../../assets/logo/programmation.png"
