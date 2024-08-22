@@ -1,5 +1,5 @@
 <template>
-  <header>
+  <header class="mb-5">
     <img src="../../assets/logo/logo.png" alt="icon" class="logo" />
     <nav>
       <ul>
@@ -50,11 +50,13 @@ nav ul {
   padding: 6px;
 }
 
-nav li {
+nav a {
   padding: 10px 50px;
 }
 
-nav li:active {
+nav a:active,
+nav a:hover,
+nav a.router-link-active {
   background-color: grey;
   border-radius: 80px;
 }
